@@ -35,7 +35,7 @@ function App() {
       </div>
       <h2>Rohit Tharu</h2>
       <form onSubmit={handleSubmit}>
-        <label></label><br />
+        <label>Rohit email</label><br />
         <input 
           type="email" 
           name="email" 
