@@ -1,0 +1,57 @@
+body{
+  padding: 0;
+  text-align: center;
+  height: 100%;
+  background-color: #17e9f573;
+}
+.photo img{
+  width: 150px;         /* Set size as needed */
+  height: 150px;
+  object-fit: cover;    /*Makes sure the image fits the shape*/
+  border-radius: 50%;   /* Makes it round */
+  border: 2px solid #ccc; 
+  
+
+}
+.login-container {
+  width: 400px;
+  height: 100vh;
+  margin-left: 400px;
+  padding: 30px;
+  border: 1px solid #f49696;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #17e9f573;
+}
+
+input {
+  width: 50%;
+  padding: 8px;
+  margin: -1px;
+  border-radius: 20px;
+  border: 2px solid #ddd;
+  background-color: #e8e2e2;
+}
+input:hover{
+background-color: aquamarine;
+}
+button {
+  width: 53%;
+  padding: 10px;
+  border: none;
+  background-color: #080b08;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ee9280;
+}
+button{
+  margin-top:  25px;
+}
+P{
+  cursor: pointer;
+}
