@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <!-- Sidebar -->
+  <div id="sidebar" class="sidebar">
+      <h2>QuizMaster</h2>
+      <a href="#">Home</a>
+      <a href="#">Quizzes</a>
+      <a href="#">Leaderboard</a>
+      <a href="about.html">About</a>
+      <a href="#" class="btn">Start Quiz</a>
+  </div>
+  <form action="/search" method="get">
+    <input type="search" id="search-input" name="query" placeholder="Search...">
+    <button type="submit">Search</button>
+</form>
+  <!-- Main Content -->
+  <div id="main">
+      <span class="openbtn" onclick="toggleSidebar()">☰ Menu</span>
+
+      <div style="padding:40px; font-size:20px;">
+        <p>Welcome to the Quiz Website 🎉</p>
+      </div>
+  
+      <h1>Quiz</h1>
+      <select id="category">
+          <option value="basic">First sem</option>
+          <option value="medium">Second sem</option>
+          <option value="average">Third sem</option>
+          <option value="complicate">Forth sem</option>
+          <option value="little-hard">Fifth sem</option>
+          <option value="medium-hard">Sixth sem</option>
+          <option value="average-hard">Seventh sem</option>
+          <option value="hardest">Eight sem</option>
+      </select>
+      <select id="difficulty">
+          <option value="easy">Level 1</option>
+          <option value="medium"> Level 2</option>
+          <option value="hard">Level 3</option>
+          <option value="hard">Level 4</option>
+          <option value="hard">Level 5</option>
+          <option value="hard">Level 6</option>
+          <option value="hard">Level 7</option>
+      </select>
+      <button id="start-btn">Start Quiz</button>
+      
+      <div id="quiz-container" style="display:none;">
+          <div id="question-container">
+              <div id="question">Question text</div>
+              <div id="answer-buttons" class="btn-grid"></div>
+          </div>
+          <button id="next-btn" class="next-btn btn">Next</button>
+      </div>
+
+      <div id="result-container" style="display:none;">
+          <h2>Your Score: <span id="score"></span></h2>
+          <button id="restart-btn" class="btn">Restart Quiz</button>
+      </div>
+  </div>
+
+  <script src="quiz.js"></script>
+  <script>
+    function toggleSidebar() {
+      document.getElementById("sidebar").classList.toggle("active");
+      document.getElementById("main").classList.toggle("shift"); 
+    }
+  </script>
+</body>
+</html>
